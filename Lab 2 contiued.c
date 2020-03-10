@@ -3,12 +3,12 @@
 
 int main()
 {
-    float Farenheit, Celsius;
-    printf("Enter Farenheit: ");
-
-    scanf("%f", &Farenheit);
-    Celsius =(Farenheit-32)*5/9; //ORDER OF OPERATIONS!!!
-    printf("Celsius: %.2f\n", Celsius);
+    float x1, x2, x3, x4, mean, variance;
+    printf("enter 4 numbers:" )
+    scanf("%f %f %f %f", &x1, &x2, &x3, &x4);
+    mean= (x1+x2+x3+x4)*1/3;
+    variance=((x1-mean)*2+(x2-mean)*2+(x3-mean)*2+(x4-mean)*2)*1/3;
+    printf("variance\n: " variance);
 
     return 0;
 }
